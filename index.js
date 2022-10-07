@@ -172,6 +172,6 @@ async function myFunction() {
     return "Hello";
 }
 myFunction().then(
-    function(value) { code };
-    function(error) { code };
+    function(value){ code };
+    function(error){ code };
 )
