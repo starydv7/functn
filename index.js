@@ -127,3 +127,11 @@ x();
 //         }
 // }
 // obj.getName();
+
+//call
+
+function sayHello() {
+    return "Hello" + this.name;
+}
+var obj = { name: "Pawan" };
+sayHello.call(obj);
