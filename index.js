@@ -69,4 +69,11 @@ let [firstName, surName] = array;
 alert(firstName);
 alert(surName);
 
-//
+//Generator
+
+function* generator() {
+    console.log("This will be connected");
+    yield "hello";  //line
+    console.log(" I will be printed after pause");
+    yield World;
+}
