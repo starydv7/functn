@@ -120,3 +120,10 @@ x();
 
 //this
 
+// function obj={
+//     name: "Pawan",
+//         getName: function() {
+//             console.log(this.name);
+//         }
+// }
+// obj.getName();
