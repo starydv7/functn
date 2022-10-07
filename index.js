@@ -147,4 +147,15 @@ function add(a) {
 add(3)(4);
 
 
+//Global Scope
+
+var global = "Pawan";
+function call() {
+    return global;
+}
+function call2() {
+    return call();
+}
+call2();
+//it will return Pawan;
 
