@@ -167,4 +167,11 @@ function call() {
         console.log(a * 2);
     }
 };
-//
+//async await
+async function myFunction() {
+    return "Hello";
+}
+myFunction().then(
+    function (value) { code }
+    function (error) { code };
+)
