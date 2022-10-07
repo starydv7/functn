@@ -107,3 +107,11 @@ function higherOrder(fn) {
 higherOrder(function () {
     console.log("Hello World");
 });
+
+function higherOrder() {
+    return function () {
+        return "Do something";
+    }
+}
+var x = higherOrder();
+x();
