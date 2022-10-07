@@ -81,3 +81,11 @@ function* generator() {
 // js Hoisting
 
 var x = 5;
+a = 1;
+alert(!a == +a);
+var a;
+function dosometing() {
+    x = 33;
+    console.log(x);
+    var x;
+}
