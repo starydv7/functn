@@ -46,3 +46,15 @@ const arrValue = ["my", "name", "is", "is", "pawan"];
 
 console.log(arrValue); //whole array like----
 console.log(...arrValue);//my name is pawan;
+
+//template
+const name = "jack";
+console.log(`Hello ${name}!`); //Hello Jack
+
+//setInterval
+
+function greet() {
+    console.log("hello world")
+}
+
+setInterval(greet, 1000);
