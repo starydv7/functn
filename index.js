@@ -78,3 +78,6 @@ function* generator() {
     yield World;
 }
 
+// js Hoisting
+
+var x = 5;
