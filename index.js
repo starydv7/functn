@@ -167,3 +167,4 @@ function call() {
         console.log(a * 2);
     }
 };
+//
