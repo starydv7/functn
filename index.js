@@ -38,3 +38,11 @@ console.log(multiply3);
 console.log(multiply()) //NAN
 
 console.log(multiply(6));
+
+
+//spread operator
+
+const arrValue = ["my", "name", "is", "is", "pawan"];
+
+console.log(arrValue); //whole array like----
+console.log(...arrValue);//my name is pawan;
