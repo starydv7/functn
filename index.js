@@ -107,7 +107,7 @@ function higherOrder(fn) {
 higherOrder(function () {
     console.log("Hello World");
 });
-
+//HigherOrder 
 function higherOrder() {
     return function () {
         return "Do something";
