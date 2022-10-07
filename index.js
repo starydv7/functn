@@ -89,3 +89,12 @@ function dosometing() {
     console.log(x);
     var x;
 }
+
+//pass by Value;
+
+var y = 234;
+var z = y;
+var y = 343;
+var z = y;
+var z = 543;
+console.log(z);
