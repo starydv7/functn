@@ -58,3 +58,15 @@ function greet() {
 }
 
 setInterval(greet, 1000);
+
+
+//Array Destructring
+
+let array = ["Pawan", "yadav"];
+
+let [firstName, surName] = array;
+
+alert(firstName);
+alert(surName);
+
+//
