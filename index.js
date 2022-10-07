@@ -159,3 +159,11 @@ function call2() {
 call2();
 //it will return Pawan;
 
+// Local Scope
+
+function call() {
+    var a = 2;
+    var multiply = function () {
+        console.log(a * 2);
+    }
+};
