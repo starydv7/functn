@@ -98,3 +98,12 @@ var y = 343;
 var z = y;
 var z = 543;
 console.log(z);
+
+//Higher Order Function
+
+function higherOrder(fn) {
+    fn();
+}
+higherOrder(function () {
+    console.log("Hello World");
+});
