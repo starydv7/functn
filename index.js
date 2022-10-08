@@ -187,3 +187,12 @@ const fetchData = () => {
 useEffect(() => {
     fetchData()
 }, []);
+<div>
+    {users.length > 0 && (
+        <ul>
+            {users.map(user => {
+                <li key={user.id}>{user.name}</li>
+            })}
+        </ul>
+    )}
+</div>
