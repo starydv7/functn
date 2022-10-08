@@ -184,3 +184,6 @@ const fetchData = () => {
         setUsers(data)
     })
 }
+useEffect(() => {
+    fetchData()
+}, []);
