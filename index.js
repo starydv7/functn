@@ -176,3 +176,11 @@ myFunction().then(
     function(error){ code };
 )
 
+const fetchData = () => {
+    fetch("url"){
+        return Response.json()
+    })
+    .then(data => {
+        setUsers(data)
+    })
+}
