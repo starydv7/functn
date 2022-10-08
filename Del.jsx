@@ -6,4 +6,4 @@ const Del = () => {
   )
 }
 
-export default Del
+export default Del;
