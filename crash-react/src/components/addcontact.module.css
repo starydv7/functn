@@ -1,7 +1,61 @@
-.form-1{
+.form-layout{
     width: 50%;
-    height: 300px;
+    height: 700px;
     text-align: center;
     margin-left: 40%;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   
+}
+form{
+    width: 40%;
+    height: 400px;
+    margin-top: 5%;
+    border-radius: 20px;
+    margin-left: 30%;
+ box-shadow: rgba(83, 29, 29, 0.19) 0px 10px 20px, rgba(217, 182, 182, 0.23) 0px 6px 6px;
+}
+h3{
+    margin-top: 5%;
+}
+.btn{
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    border-radius: 20px;
+
+}
+.name{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid greenyellow;
+    margin-top: 10px;
+    width: 60%;
+}
+.contact{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(219, 195, 40);
+    margin-top: 10px;
+     width: 60%;
+}
+.email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(32, 84, 207);
+    margin-top: 10px;
+     width: 60%;
+}
+.url{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid blueviolet;
+    margin-top: 10px;
+     width: 60%;
+}
+label{
+    font-weight: 700;
+    color: rgb(240, 9, 9);
 }
