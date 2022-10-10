@@ -122,7 +122,7 @@ const AddContact = () => {
               placeholder="Frontend/Backend-Dev"
               className={styles.url}
               value={role}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setRole(e.target.value)}
             />
           </div>
           <input type="submit" className={styles.btn} />
