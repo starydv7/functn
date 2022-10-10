@@ -87,7 +87,7 @@ const AddContact = () => {
               value={email}
               placeholder="Email"
               className={styles.email}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-div2">
@@ -98,7 +98,7 @@ const AddContact = () => {
               value={url}
               placeholder="Linkdin Url"
               className={styles.url}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setLinkdin(e.target.value)}
             />
           </div>
           <br></br>
@@ -110,7 +110,7 @@ const AddContact = () => {
               placeholder="Github Url"
               value={github}
               className={styles.url}
-              onChange={(e) => setUrl(e.target.value)}
+              onChange={(e) => setGithub(e.target.value)}
             />
           </div>
           <br></br>
