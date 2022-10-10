@@ -10,7 +10,7 @@ const AddContact=()=> {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://httpbin.org/post", {
+      let res = await fetch("https://apipawan3.herokuapp.com/users", {
         method: "POST",
         body: JSON.stringify({
           name: name,
