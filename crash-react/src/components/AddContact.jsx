@@ -52,9 +52,9 @@ const AddContact = () => {
 
   return (
     <div className={styles.form - 1}>
-      <div className="form-layout">
+      
         <h3> Add Details Here</h3>
-        <form className="form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="form-div">
             <label>Name</label>
             <br></br>
@@ -130,7 +130,7 @@ const AddContact = () => {
             <br></br>
           </div>
         </form>
-      </div>
+   
     </div>
   );
 }
