@@ -48,11 +48,15 @@ const AddContact = () => {
           <div className="form-div2">
             <label>Role</label>
             <br></br>
-            <input type="text" placeholder="Frontend/Backend-Dev" className={styles.url} />
+            <input
+              type="text"
+              placeholder="Frontend/Backend-Dev"
+              className={styles.url}
+            />
           </div>
+          <input type="submit" className={styles.btn} />
           <div>
             <br></br>
-            <input type="submit" className={styles.btn} />
           </div>
         </form>
       </div>
