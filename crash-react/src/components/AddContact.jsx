@@ -95,7 +95,7 @@ const AddContact = () => {
             <br></br>
             <input
               type="url"
-              value={url}
+              value={linkdin}
               placeholder="Linkdin Url"
               className={styles.url}
               onChange={(e) => setLinkdin(e.target.value)}
