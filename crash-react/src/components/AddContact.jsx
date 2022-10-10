@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./addcontact.module.css";
 const AddContact = () => {
 
-  
+
   return (
     <div className={styles.form - 1}>
       <div className="form-layout">
@@ -60,4 +60,4 @@ const AddContact = () => {
   );
 }
 
-export default AddContact
+export default AddContact;
