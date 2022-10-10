@@ -110,7 +110,7 @@ const AddContact = () => {
               placeholder="Github Url"
               value={github}
               className={styles.url}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setUrl(e.target.value)}
             />
           </div>
           <br></br>
