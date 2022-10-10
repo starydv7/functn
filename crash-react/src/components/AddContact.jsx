@@ -75,7 +75,7 @@ const AddContact = () => {
               value={contact}
               placeholder="Contact Number"
               className={styles.contact}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setContact(e.target.value)}
             />
           </div>
           <br></br>
