@@ -17,7 +17,7 @@ function equilibrium(arr, n)
               for(let j = i + 1; j < n; j++)
               rightsum += arr[j];
                
-             
+                  
               if(leftsum == rightsum)
                  return i;
          }
