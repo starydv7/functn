@@ -6,8 +6,6 @@ function equilibrium(arr, n)
          
          for(i = 0; i < n; ++i)
          {
-          
-           
              leftsum = 0;
               for(let j = 0; j < i; j++)
               leftsum += arr[j];
