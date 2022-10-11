@@ -200,7 +200,7 @@ const User = () => {
 
           <div className="message">{message ? <p>{message}</p> : null}</div>
         </form>
-        <p>React pagination test</p>
+        {/* <p>React pagination test</p>
         <ul>{allData}</ul>
         <Pagination
           totalItemsCount={450}
@@ -208,7 +208,7 @@ const User = () => {
           activePage={this.state.activePage}
           itemsCountPerPage={10}
           pageRangeDisplayed={5}
-        />
+        /> */}
       </div>
     );
 }
