@@ -11,7 +11,6 @@ function equilibrium(arr, n)
              leftsum = 0;
               for(let j = 0; j < i; j++)
               leftsum += arr[j];
-               
               rightsum = 0;
               for(let j = i + 1; j < n; j++)
               rightsum += arr[j];   
