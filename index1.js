@@ -2,8 +2,7 @@ function equilibrium(arr, n)
 {
          var i, j;
          var leftsum, rightsum;
-          
-         
+
          for(i = 0; i < n; ++i)
          {
              leftsum = 0;
