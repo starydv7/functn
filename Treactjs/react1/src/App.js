@@ -8,9 +8,10 @@ function App() {
       id:2,userName:"yadav",age:23
     }
   ])
+  var delData = data;
    const handleDelete=(item)=>{
-    const deldata =data.filter(i => i.id !== item.id)
-  setData({deldata})
+    const delData =this.data.filter(i => i.id !== item.id)
+  setData({delData})
   }
   return (
     <div className="App">
