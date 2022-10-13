@@ -8,8 +8,11 @@ function App() {
       id:2,userName:"yadav",age:23
     }
   ])
-  
-  
+  const handleDelete = () => {
+    const newData = data.filter(data => data.id !== id)
+    setData(newData);
+  }
+
   return (
     <div className="App">
       <h2>Details</h2>
@@ -20,7 +23,7 @@ function App() {
            
             <div>{el.userName}</div>
             <div>{el.id}</div>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={()=>handleDelete(data.id)}>Delete</button>
           </div>
         )
       })}
