@@ -9,8 +9,8 @@ function App() {
     }
   ])
    const handleDelete=(item)=>{
-    const data = this.state.data.filter(i => i.id !== item.id)
-    this.setState({data})
+    const deldata =data.filter(i => i.id !== item.id)
+  setData({deldata})
   }
   return (
     <div className="App">
