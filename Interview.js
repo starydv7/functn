@@ -19,3 +19,12 @@
 // for (let i = 0; i < 3; i++){
 //     setTimeout(() => console.log(i), 1);
 // }
+
+
+//reference variable
+
+let c = { name: "Pawan" };
+let d;
+d = c;
+c.name = "Yadav";
+console.log(d.name);
