@@ -16,6 +16,6 @@
 //because var is global scope and setTimeout takes some to show then 3 times loops run
 //when we do same things with LET it will print counting because LET is blocked scope only
 
-for (let i = 0; i < 3; i++){
-    setTimeout(() => console.log(i), 1);
-}
+// for (let i = 0; i < 3; i++){
+//     setTimeout(() => console.log(i), 1);
+// }
