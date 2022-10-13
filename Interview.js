@@ -1,10 +1,16 @@
-//Hoisting
-function fruits() {
-    name = "Yadav";
-    //we cant do with let hositing doesnot allow us to do this with let
-    console.log(name);
-    console.log(price);
-    var name = "Pawan";
-    let price=92299229
+// ///Hoisting
+// function fruits() {
+//     name = "Yadav";
+//     //we cant do with let hositing doesnot allow us to do this with let
+//     console.log(name);
+//     //console.log(price);
+//     var name;
+//     let price=92299229
+// }
+// fruits();/
+
+//setTimeOut
+for (var i = 0; i < 3; i++){
+    setTimeout(() => console.log(i), 1);
 }
-fruits();
+//because var is global scope and setTimeout takes some to show then 3 times loops run
