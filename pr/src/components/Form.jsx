@@ -38,21 +38,21 @@ const User = () => {
           })
           .catch((err) => {});
     };
-    //   const FetchData = () => {
-    //     fetch(
-    //       "https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/getrestaurants"
-    //     )
-    //       .then((res) => res.json())
-    //       .then((res) => {
-    //         setData(res);
-    //       })
-    //       .catch((err) => {
-    //         console.log(err);
-    //       });
-    //   };
-    //   useEffect(() => {
-    //     FetchData();
-    //   }, []);
+      // const FetchData = () => {
+      //   fetch(
+      //     "https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/getrestaurants"
+      //   )
+      //     .then((res) => res.json())
+      //     .then((res) => {
+      //       setData(res);
+      //     })
+      //     .catch((err) => {
+      //       console.log(err);
+      //     });
+      // };
+      // useEffect(() => {
+      //   FetchData();
+      // }, []);
     //   const sorthandle = (e) => {
     //     const { value } = e.target;
 
