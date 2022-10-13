@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       id:2,userName:"yadav",age:23
     }
   ])
+ 
   const handleDelete = (id) => {
     const newData = data.filter(data => data.id !== id)
     setData(newData);
