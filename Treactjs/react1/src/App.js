@@ -25,8 +25,6 @@ function App() {
             <div>{el.id}</div>
             <button onClick={handleDelete}>Delete</button>
           </div>
-    
-       
         )
       })}
     </div>
