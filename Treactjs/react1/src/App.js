@@ -9,8 +9,8 @@ function App() {
     }
   ])
  
-  const handleDelete = (id) => {
-    const newData = data.filter(data => data.id !== id)
+  const handleDelete =(id)=>{
+    const newData = data.filter(data=>data.id!==id)
     setData(newData);
   }
 
