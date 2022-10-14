@@ -13,7 +13,7 @@ function App() {
     const newData = data.filter(data=>data.id!==id)
     setData(newData);
   }
-  <Main/>
+  
   return (
     <div className="App">
       <h2>Details</h2>
@@ -28,8 +28,9 @@ function App() {
           </div>
         )
       })}
-
+<Main/>
     </div>
+    
   );
 }
 
