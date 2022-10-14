@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './App.css';
+import Main from "./components/Main";
 
 function App() {
   const [data, setData] = useState([
@@ -13,6 +14,7 @@ function App() {
     const newData = data.filter(data=>data.id!==id)
     setData(newData);
   }
+  <Main/>
 
   return (
     <div className="App">
@@ -28,6 +30,7 @@ function App() {
           </div>
         )
       })}
+
     </div>
   );
 }
