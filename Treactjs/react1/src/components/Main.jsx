@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "./styles.css";
 const ERR_MSG="Age is less enter more age.";
 const NotErr="Great";
 const Main = () => {
