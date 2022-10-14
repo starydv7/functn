@@ -15,7 +15,6 @@ function App() {
     setData(newData);
   }
   <Main/>
-
   return (
     <div className="App">
       <h2>Details</h2>
