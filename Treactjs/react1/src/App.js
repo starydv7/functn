@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Main from "./components/Main";
-
 function App() {
   const [data, setData] = useState([
     { id: 1, userName: "Pawan", age: 24 },
