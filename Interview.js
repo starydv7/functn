@@ -41,12 +41,12 @@
 //     c === d
 // );
 
-const Person=({
-    name: "Pawan",
-    age: "24",
-    printInfo: function () {
-        console.log(`My name is ${this.name} and my age is ${this.age}`);
-        }
+// const Person=({
+//     name: "Pawan",
+//     age: "24",
+//     printInfo: function () {
+//         console.log(`My name is ${this.name} and my age is ${this.age}`);
+//         }
             
-})
-Person.printInfo();
+// })
+// Person.printInfo();
