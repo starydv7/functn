@@ -50,3 +50,14 @@
             
 // })
 // Person.printInfo();
+
+const Info = () => {
+    var age;
+    if (age > 18) {
+        return "Okay"
+    }
+    else {
+        return "Not Okay";
+    }
+}
+console.log(Info(25));
