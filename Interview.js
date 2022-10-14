@@ -23,8 +23,20 @@
 
 //reference variable
 
-let c = { name: "Pawan" };
-let d;
-d = c;
-c.name = "Yadav";
-console.log(d.name);
+// let c = { name: "Pawan" };
+// let d;
+// d = c;
+// c.name = "Yadav";
+// console.log(d.name);
+
+//=== and ==
+// let a = 3;
+// let b = new Number(3);
+// let c = 2;
+// let d = "2";
+// console.log(a == b);
+// console.log(a === b);
+// console.log(c == d);
+// console.log(
+//     c === d
+// );
