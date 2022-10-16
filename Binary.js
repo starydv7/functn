@@ -46,3 +46,6 @@ const outputReduce = arrReduce.reduce(function (acc, current) {
     return acc;
 }, 0);
 console.log("Reduce", outputReduce);
+
+//max value by Reduce function
+
