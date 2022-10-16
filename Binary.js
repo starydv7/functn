@@ -48,4 +48,15 @@ const outputReduce = arrReduce.reduce(function (acc, current) {
 console.log("Reduce", outputReduce);
 
 //max value by Reduce function
+function maxValue(arrReduce) {
+    let max = 0;
+    for (var i = 0; i < arrReduce.length; i++){
+        if (arrReduce[i] > max) {
+            max = arrReduce[i];
+        }
+    }
+    return max;
 
+    
+}
+console.log("Maximum Value",maxValue(arrReduce))
