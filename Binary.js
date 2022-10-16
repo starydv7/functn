@@ -28,3 +28,13 @@ console.log("Functional",outputFilter);
 const arrReduce = [1, 4, 7, 4, 8];
 //sum or max number
 
+//non function way to reduce
+
+function findSum(arrReduce) {
+    let sum = 0;
+    for (var i = 0; i < arrReduce.length; i++){
+        sum += arrReduce[i];
+    }
+    return sum;
+}
+console.log("Reduce By function",findSum(arrReduce));
