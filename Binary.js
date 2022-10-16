@@ -40,5 +40,9 @@ function findSum(arrReduce) {
 console.log("Reduce By function", findSum(arrReduce));
 
 //Another way to make sum and find maximum number
-
-
+//Reduce Function Direct show desired result
+const outputReduce = arrReduce.reduce(function (acc, current) {
+    acc = acc + current;
+    return acc;
+}, 0);
+console.log("Reduce", outputReduce);
