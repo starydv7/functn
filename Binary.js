@@ -11,3 +11,6 @@ function isEven(x) {
 }
 var output = arrFilter.filter(isEven);
 console.log(output);
+
+//even output only
+//what if x >4
