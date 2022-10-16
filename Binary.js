@@ -21,3 +21,8 @@ const outputFilter = arrFilter.filter(function greaterThan4(x) {
     return x < 5;
 });
 console.log("Functional",outputFilter);
+
+
+//reduce
+
+const arrReduce = [1, 4, 7, 4, 8];
