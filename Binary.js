@@ -55,8 +55,6 @@ function maxValue(arrReduce) {
             max = arrReduce[i];
         }
     }
-    return max;
-
-    
+    return max;  
 }
 console.log("Maximum Value",maxValue(arrReduce))
