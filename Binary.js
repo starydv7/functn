@@ -16,3 +16,8 @@ console.log(output);
 
 //even output only
 //what if x >4
+
+const outputFilter = arrFilter.filter(function greaterThan4(x) {
+    return x < 5;
+});
+console.log("Functional",outputFilter);
