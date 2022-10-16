@@ -14,7 +14,7 @@ const Main = () => {
   }
   return (
     <div>
-      <input value={text} onChange={handleInput} />
+      <input value={text} onChange={handleInput} type="number"/>
       {isError ? ERR_MSG : NotErr}
     </div>
   );
