@@ -26,3 +26,5 @@ console.log("Functional",outputFilter);
 //reduce
 
 const arrReduce = [1, 4, 7, 4, 8];
+//sum or max number
+
