@@ -37,4 +37,8 @@ function findSum(arrReduce) {
     }
     return sum;
 }
-console.log("Reduce By function",findSum(arrReduce));
+console.log("Reduce By function", findSum(arrReduce));
+
+//Another way to make sum and find maximum number
+
+
