@@ -122,14 +122,16 @@ var arr3 = ["a", "b", "c", "D"];
 // }
 
 // console.log(sum(arr1, arr2));
-function subArray(arr1,arr2) {
-    if (arr1 == arr3)
-    {
-        return true;
+function subArray(arr1, arr2) {
+    var bag = [];
+    for (var i = 0; i < arr1.length; i++){
+        if (arr1[i] == arr3[i]) {
+            bag.push(arr3[i]+arr1[i]);
+        }
+        else {
+           continue;
+        }
     }
-    else {
-        return false;
-    }
-    
+    return bag;
 }
 console.log(subArray(arr1, arr2));
