@@ -85,7 +85,7 @@ console.log(aglobal);
 let cblock = 100;
 {
     var aglobal = 10;
-    let z = 10;
+    let z = 20;
     const cblock = 30;
     console.log("shdow")
     console.log(aglobal);
