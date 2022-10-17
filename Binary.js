@@ -65,4 +65,18 @@ const y = "abc";
 const a = x;
 const b = y;
 
-console.log(x, y, a, b);
+console.log("Pass By Value", x, y, a, b);
+
+//Scope
+{
+    var aglobal = 10;
+    let b = 10;
+    const cblock = 30;
+    console.log(aglobal);
+    console.log(b);
+    console.log(cblock);
+}
+
+console.log(aglobal);
+// console.log(b);
+// console.log(cblock);
