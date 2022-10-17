@@ -104,11 +104,19 @@
 // shadowing();
 // console.log(y);
 
-var c = 100;
-function x() {
-    var c = 10;
-    console.log(this.c);
-    this.c = 20;
+// var c = 100;
+// function x() {
+//     var c = 10;
+//     console.log(this.c);
+//     this.c = 20;
+// }
+// x();
+// console.log(c);
+var arr1 = ["a", "b", "c", "D"];
+var arr2 = ["e", "f", "g", "t"];
+
+function sum(arr1,arr2) {
+    return arr1 + arr2;
 }
-x();
-console.log(c);
+
+console.log(sum(arr1, arr2));
