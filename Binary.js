@@ -80,3 +80,16 @@ console.log("Pass By Value", x, y, a, b);
 console.log(aglobal);
 // console.log(b);
 // console.log(cblock);
+
+// shadowing
+let cblock = 100;
+{
+    var aglobal = 10;
+    let z = 10;
+    const cblock = 30;
+    console.log("shdow")
+    console.log(aglobal);
+    console.log(z);
+    console.log(cblock);
+}
+console.log(cblock);
