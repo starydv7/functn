@@ -57,4 +57,12 @@ function maxValue(arrReduce) {
     }
     return max;  
 }
-console.log("Maximum Value",maxValue(arrReduce))
+console.log("Maximum Value", maxValue(arrReduce))
+
+//pass bt value
+const x = 10;
+const y = "abc";
+const a = x;
+const b = y;
+
+console.log(x, y, a, b);
