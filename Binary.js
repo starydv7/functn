@@ -112,11 +112,11 @@
 // }
 // x();
 // console.log(c);
-var arr1 = ["a", "b", "c", "D"];
-var arr2 = ["e", "f", "g", "t"];
+// var arr1 = ["a", "b", "c", "D"];
+// var arr2 = ["e", "f", "g", "t"];
 
-function sum(arr1,arr2) {
-    return arr1 + arr2;
-}
+// function sum(arr1,arr2) {
+//     return arr1 + arr2;
+// }
 
-console.log(sum(arr1, arr2));
+// console.log(sum(arr1, arr2));
