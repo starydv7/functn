@@ -112,26 +112,42 @@
 // }
 // x();
 // console.log(c);
-var arr1 = ["a", "b", "c", "D"];
-var arr2 = ["e", "f", "g", "t"];
-var arr3 = ["a", "b", "c", "D"];
+// var arr1 = ["a", "b", "c", "D"];
+// var arr2 = ["e", "f", "g", "t"];
+// var arr3 = ["a", "b", "c", "D"];
 
 
-// function sum(arr1,arr2) {
-//     return arr1 + arr2;
+// // function sum(arr1,arr2) {
+// //     return arr1 + arr2;
+// // }
+
+// // console.log(sum(arr1, arr2));
+// function subArray(arr1, arr2) {
+//     var bag = [];
+//     for (var i = 0; i < arr1.length; i++){
+//         if (arr1[i] == arr3[i]) {
+//             bag.push(arr3[i]+arr1[i]);
+//         }
+//         else {
+//            continue;
+//         }
+//     }
+//     return bag;
 // }
+// console.log(subArray(arr1, arr2));
 
-// console.log(sum(arr1, arr2));
-function subArray(arr1, arr2) {
-    var bag = [];
-    for (var i = 0; i < arr1.length; i++){
-        if (arr1[i] == arr3[i]) {
-            bag.push(arr3[i]+arr1[i]);
-        }
-        else {
-           continue;
-        }
+
+//Closure exapmles
+
+function counter() {
+    var count = 0;
+    return function incrementCounter() {
+        count++;
+        console.log(count);
     }
-    return bag;
 }
-console.log(subArray(arr1, arr2));
+var counter1 = counter();
+counter1();
+counter1();
+{/* <button onclick={counter1}>Increase</button> */}
+
