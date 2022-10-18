@@ -149,3 +149,18 @@
 // counter1();
 // {/* <button onclick={counter1}>Increase</button> */}
 
+function Counter() {
+    var count = 0;
+    const incrementCounter=()=>{
+        count++;
+        console.log(count);
+    }
+
+    const decrementCounter = () => {
+        count--;
+        console.log(count);
+    }
+}
+
+//var counter1 = new Counter();//
+counsole.log(Counter());
