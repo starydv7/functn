@@ -135,19 +135,17 @@
 //     return bag;
 // }
 // console.log(subArray(arr1, arr2));
-
-
 //Closure exapmles
 
-function counter() {
-    var count = 0;
-    return function incrementCounter() {
-        count++;
-        console.log(count);
-    }
-}
-var counter1 = counter();
-counter1();
-counter1();
-{/* <button onclick={counter1}>Increase</button> */}
+// function counter() {
+//     var count = 0;
+//     return function incrementCounter() {
+//         count++;
+//         console.log(count);
+//     }
+// }
+// var counter1 = counter();
+// counter1();
+// counter1();
+// {/* <button onclick={counter1}>Increase</button> */}
 
