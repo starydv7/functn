@@ -13,7 +13,6 @@ const reducer = (state, action) => {
             return state;
     }
 };
-
 const Home = () => {
     const [state, dispatch] = useReducer(reducer, { count: 0});
   return (
