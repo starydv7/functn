@@ -6,7 +6,7 @@ const reducer = (state, action) => {
             count: state.count + 1, showText: state.showText
             }
         case "toggleShowText":
-            return { count: state.count, showText: !state.showText };
+        return { count: state.count, showText: !state.showText };
         default:
         return state;
     }
