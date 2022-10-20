@@ -8,7 +8,7 @@ const reducer = (state, action) => {
         case "toggleShowText":
             return { count: state.count, showText: !state.showText };
         default:
-            return state;
+        return state;
     }
 };
 const Home = () => {
