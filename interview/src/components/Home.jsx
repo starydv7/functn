@@ -18,7 +18,7 @@ const Home = () => {
           <h1>{state.count}</h1>
           {/* <button onClick={}></button> */}
           <button onClick={() => {
-              dispatch({ type: "INCREMENT" });
+          dispatch({ type: "INCREMENT" });
             //   dispatch({ type: "toggleshowText" });
           }}>Button</button>
           {/* {state.showText && <p>This is a text</p>} */}
