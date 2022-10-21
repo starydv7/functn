@@ -1,5 +1,6 @@
 import './App.css';
 import Home from "./components/Home";
+import UseContext from './components/UseContext';
 import UseEffect from './components/UseEffect';
 import UseRef from './components/UseRef';
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <Home />
       <UseEffect />
-      <UseRef/>
+      <UseRef />
+      <UseContext/>
     </div>
   );
 }

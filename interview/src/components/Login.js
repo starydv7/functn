@@ -5,8 +5,8 @@ const Login = () => {
   return (
       <div>
           <input
-              onChange={(e) => {
-                  setUserName(e.target.value);
+              onChange={(event) => {
+                  setUserName(event.target.value);
               }}
           />
      </div>
