@@ -52,15 +52,15 @@ const Create = () => {
               label="First Name"
             />
           </div>
-          <div class="w-full md:w-1/2 px-3">
+          <div>
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            
               for="grid-last-name"
             >
               Last Name
             </label>
             <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            
               id="grid-last-name"
               type="text"
               placeholder="Last Name"
@@ -69,16 +69,15 @@ const Create = () => {
             />
           </div>
         </div>
-        <div class="flex flex-wrap mx-3 mb-2">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div>
+          <div>
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+             
             >
               Email Address
             </label>
             <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+             
               id="grid-first-name"
               type="email"
               placeholder="Email address"
@@ -86,15 +85,14 @@ const Create = () => {
               label="Email"
             />
           </div>
-          <div class="w-full md:w-1/2 px-3">
+          <div>
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-last-name"
+             
             >
               Username
             </label>
             <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+             
               id="grid-last-name"
               label="Username"
               onChange={(e) => setUsername(e.target.value)}
@@ -103,16 +101,15 @@ const Create = () => {
             />
           </div>
         </div>
-        <div class="flex flex-wrap mx-3 mb-1">
-          <div class="w-full px-3">
+        <div>
+          <div>
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-image"
+            
             >
               Avatar
             </label>
             <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            
               id="grid-image"
               type="text"
               placeholder="Image link"
@@ -123,7 +120,7 @@ const Create = () => {
         </div>
         <button
           type="submit"
-          class="inline-flex items-center ml-8 px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          
         >
           SUBMIT
         </button>
