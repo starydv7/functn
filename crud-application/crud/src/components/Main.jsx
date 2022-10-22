@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Main = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        
+        fetchData();
     }, []);
 
     const fetchData = () => {
