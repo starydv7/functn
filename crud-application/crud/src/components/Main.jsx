@@ -1,9 +1,10 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
     const [users, setUsers] = useState([]);
     useEffect(() => {
         fetchData();
@@ -16,6 +17,9 @@ const Main = () => {
                 setUsers(result)
             })
   };
+  const handleNavigate=() => {
+    Navigate("update");
+  }
   const DeleteUser = (id) => {
     var data = {
       id: id,
@@ -36,6 +40,7 @@ const Main = () => {
         }
       });
   };
+
     return (
       <>
         <div>
@@ -80,7 +85,7 @@ const Main = () => {
                     </div>
                   </td>
                   <td>
-                    <button>EDIT</button>
+                    <button onClick={handleNavigate}>EDIT</button>
                     <button
                       onClick={() => DeleteUser(user.id)}
                     
