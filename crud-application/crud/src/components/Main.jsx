@@ -77,7 +77,7 @@ const Main = () => {
               {users.map((user) => (
                 <tr key={user.ID}>
                   <td>
-                    <div>{user.id}</div>
+                    <div key={user.id}>{user.id}</div>
                   </td>
                   <td>
                     <div>
@@ -94,7 +94,6 @@ const Main = () => {
                     <button onClick={handleNavigate}>EDIT</button>
                     <button
                       onClick={() => DeleteUser(user.id)}
-                    
                     >
                       DELETE
                     </button>
