@@ -12,11 +12,11 @@ const Update = () => {
     fetch(`https://www.mecallapi.com/api/users/`)
       .then((res) => res.json())
       .then((result) => {
-        setFname(result.user.fname);
-        setLname(result.user.lname);
-        setUsername(result.user.username);
-        setEmail(result.user.email);
-        setAvatar(result.user.avatar);
+        setFname(result.fname);
+        setLname(result.lname);
+        setUsername(result.username);
+        setEmail(result.email);
+        setAvatar(result.avatar);
         
       })
   }, [id]);
