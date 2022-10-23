@@ -42,7 +42,7 @@ const Update = () => {
       .then((result) => {
         alert(result["message"]);
         if (result["status"] === "ok") {
-          window.location = "/update/+id";
+          window.location = "/";
         }
       });
   }
