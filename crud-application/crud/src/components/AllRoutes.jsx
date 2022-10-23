@@ -11,7 +11,8 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
         <Route path="/main" element={<Main />} />
-        <Route path="/update" element={<Update/>} />
+        <Route path="/main/update" element={<Update />} />
+        <Route path="/update" element={<Update />} />
       </Routes>
     </div>
   );

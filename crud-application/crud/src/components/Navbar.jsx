@@ -5,8 +5,9 @@ const Navbar = () => {
     <div>
       <Link to="/">Home</Link>
       <Link to="/create">Create List</Link>
-      <Link to="/update">Update</Link>
+      <Link to="/main/update">Update</Link>
       <Link to="/main">MainPage</Link>
+      <Link to="/update">Update</Link>
     </div>
   );
 }

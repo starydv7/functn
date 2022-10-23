@@ -18,7 +18,7 @@ const Main = () => {
             })
   };
   const handleNavigate=() => {
-    Navigate("update");
+    navigate("update");
   }
   const DeleteUser = (id) => {
     var data = {
