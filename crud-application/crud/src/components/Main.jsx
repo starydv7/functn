@@ -15,7 +15,27 @@ const Main = () => {
             .then((result) => {
                 setUsers(result)
             })
+  };
+  const DeleteUser = (id) => {
+    var data = {
+      id: id,
     };
+    fetch("https://www.mecallapi.com/api/users/delete", {
+      method: "DELETE",
+      headers: {
+        Accept: "application/form-data",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        alert(result["message"]);
+        if (result["status"] === "ok") {
+          fetchData();
+        }
+      });
+  };
     return (
       <>
         <div>
@@ -41,30 +61,36 @@ const Main = () => {
                 <th>Edit</th>
                 <th>DELETE</th>
               </tr>
-                    </thead>
-                    <tbody>
-                        {users.map((user) => (
-                            <tr key={user.ID}>
-                                <td>
-                                    <div>
-                                        {user.id}
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <img src={user.avatar} alt="avatar"/>
-                                    </div>
-                                    <div>
-                                        <span>{user.fname}<span>{user.lname}</span></span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <button>EDIT</button>
-                                    <button>Delete</button>
-                                </td>
-                           </tr>
-                       ))}
-                    </tbody>
+            </thead>
+            <tbody>
+              {users.map((user) => (
+                <tr key={user.ID}>
+                  <td>
+                    <div>{user.id}</div>
+                  </td>
+                  <td>
+                    <div>
+                      <img src={user.avatar} alt="avatar" />
+                    </div>
+                    <div>
+                      <span>
+                        {user.fname}
+                        <span>{user.lname}</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <button>EDIT</button>
+                    <button
+                      onClick={() => DeleteUser(user.id)}
+                    
+                    >
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </>
