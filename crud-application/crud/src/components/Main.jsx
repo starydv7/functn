@@ -12,11 +12,11 @@ const Main = () => {
     }, []);
 
     const fetchData = () => {
-        fetch("https://www.mecallapi.com/api/users")
-            .then((res) => res.json())
-            .then((result) => {
-                setUsers(result)
-            })
+        fetch("https://spaimas.herokuapp.com/students")
+          .then((res) => res.json())
+          .then((result) => {
+            setUsers(result);
+          });
   };
   const handleNavigate=() => {
     navigate("update");
