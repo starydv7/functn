@@ -5,4 +5,5 @@ img{
 .navbar{
   justify-content: space-evenly;
   justify-items: space-around;
+  color: green;
 }
