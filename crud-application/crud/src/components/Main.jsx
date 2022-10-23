@@ -25,7 +25,9 @@ const Main = () => {
       navigate("create");
     };
  
-  
+  const UpdateUser = (id) => {
+    window.location = "/update/" + id;
+  };
   const DeleteUser = (id) => {
     var data = {
       id: id,
@@ -57,7 +59,7 @@ const Main = () => {
           <div>
             <span>
               <Link to="/main">
-                <button  onClick={handleCreate}>Create</button>
+                <button onClick={handleCreate}>Create</button>
               </Link>
             </span>
           </div>
@@ -91,12 +93,8 @@ const Main = () => {
                     </div>
                   </td>
                   <td>
-                    <button onClick={handleNavigate}>EDIT</button>
-                    <button
-                      onClick={() => DeleteUser(user.id)}
-                    >
-                      DELETE
-                    </button>
+                    <button onClick={() => UpdateUser(user.id)}>EDIT</button>
+                    <button onClick={() => DeleteUser(user.id)}>DELETE</button>
                   </td>
                 </tr>
               ))}
