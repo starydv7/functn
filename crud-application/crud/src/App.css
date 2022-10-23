@@ -2,3 +2,7 @@ img{
   width: 50px;
   height: 50px;
 }
+.navbar{
+  justify-content: space-evenly;
+  justify-items: space-around;
+}

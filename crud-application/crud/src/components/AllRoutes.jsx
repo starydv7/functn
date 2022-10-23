@@ -6,7 +6,7 @@ import Main from './Main';
 import Update from './Update';
 const AllRoutes = () => {
   return (
-    <div>
+    <div className='navbar'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
