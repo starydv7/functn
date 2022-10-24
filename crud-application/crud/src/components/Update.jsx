@@ -52,7 +52,6 @@ const Update = () => {
         <div>
           <div>
             <label
-             
             >
               First Name
             </label>
@@ -67,12 +66,10 @@ const Update = () => {
           </div>
           <div>
             <label
-            
             >
               Last Name
             </label>
             <input
-            
               id="grid-last-name"
               type="text"
               value={lname}
@@ -83,13 +80,11 @@ const Update = () => {
         </div>
         <div>
           <div>
-            <label
-             
+            <label 
             >
               Email Address
             </label>
             <input
-             
               id="grid-first-name"
               type="email"
               value={email}
@@ -98,13 +93,11 @@ const Update = () => {
             />
           </div>
           <div>
-            <label
-             
+            <label 
             >
               Username
             </label>
             <input
-            
               id="grid-last-name"
               label="Username"
               onChange={(e) => setUsername(e.target.value)}
@@ -116,12 +109,10 @@ const Update = () => {
         <div>
           <div>
             <label
-              
             >
               Avatar
             </label>
             <input
-             
               type="text"
               value={avatar}
               label="Avatar"
@@ -129,10 +120,9 @@ const Update = () => {
             />
           </div>
         </div>
-        <button type="submit" class="inline-flex items-center ml-8 px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button>
            Update
        </button>
-         
       </form>
     </div>
   );
