@@ -11,15 +11,18 @@ const Request = () => {
             url: "https://jsonplaceholder.typicode.com/todos",
         })
             .then((res) => setData(res.data))
+       // console.log(res.data)
             .catch((err) => console.log(err));
     }
     useEffect(() => {
         getData();
     }, []);
+    console.log(data);
   return (
       <div>
-          {data.map((el)=>{
-              <div>{el.userId}</div>
+          <h1>List users</h1>
+          {data.length>0 && data.map((el)=>{
+              <div>{el.title}</div>
          })}
     </div>
   )
