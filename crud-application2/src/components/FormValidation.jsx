@@ -7,8 +7,15 @@ const FormValidation = () => {
   const [lastName, setLastName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [userId, setUserId] = useState("");
+  const [firstNameErr, setFirstNameErr] = useState({});
+  const [lastNameErr, setLastNameErr] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
+  }
+  const formValidation = () => {
+    const firstNameErr = {};
+    const lastNameErr = {};
+    let isValid = true;
   }
   return (
     <div>
