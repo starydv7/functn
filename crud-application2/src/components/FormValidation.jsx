@@ -35,6 +35,9 @@ const FormValidation = () => {
       <form>
         <label>First Name</label>
         <br></br>
+        {Object.keys(firstNameErr).map((key) => {
+          return <div style={{ color: "red" }}>{firstNameErr}[key]</div>
+        })}
         <input
           type="text"
           placeholder="First Name"
