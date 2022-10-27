@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
+
 const FormValidation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -53,6 +54,8 @@ const FormValidation = () => {
             setUserId(e.target.value);
           }}
         />
+        <br></br>
+        <button className='btn'>Submit</button>
       </form>
     </div>
   );
