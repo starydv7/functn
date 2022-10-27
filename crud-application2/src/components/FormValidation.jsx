@@ -8,7 +8,6 @@ const FormValidation = () => {
   const [mobileNumber, setMobileNumber] = useState("");
   const [userId, setUserId] = useState("");
   const [firstNameErr, setFirstNameErr] = useState({});
-  const [lastNameErr, setLastNameErr] = useState({});
   const [mobileNumberErr, setMobileNumberErr] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +15,6 @@ const FormValidation = () => {
   }
   const formValidation = () => {
     const firstNameErr = {};
-   
     const mobileNumberErr = {};
     let isValid = true;
     if (firstName.trim().length < 5)
@@ -33,7 +31,7 @@ const FormValidation = () => {
   }
   return (
     <div>
-      <form>
+      <form onClick={handleSubmit}>
         <label>First Name</label>
         <br></br>
         {Object.keys(firstNameErr).map((key) => {
