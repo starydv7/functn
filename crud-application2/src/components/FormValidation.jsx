@@ -15,7 +15,7 @@ const FormValidation = () => {
   }
   const formValidation = () => {
     const firstNameErr = {};
-    const lastNameErr = {};
+   
     const mobileNumberErr = {};
     let isValid = true;
     if (firstName.trim().length < 5)
