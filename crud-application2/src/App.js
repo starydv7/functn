@@ -1,10 +1,12 @@
 import './App.css';
-import FormValidation from './components/FormValidation';
+// import FormValidation from './components/FormValidation';
+import Validation from './components/Validation';
 
 function App() {
   return (
     <div className="App">
-     <FormValidation/>
+      {/* <FormValidation/> */}
+      <Validation/>
     </div>
   );
 }
