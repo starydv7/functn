@@ -5,6 +5,7 @@ const FormValidation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
+  const [userId, setUserId] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
   }
@@ -32,7 +33,12 @@ const FormValidation = () => {
           value={mobileNumber}
           onChange={(e)=>setMobileNumber(e.target.value)}
         />
-        <input type="text" placeholder="user id" />
+        <input
+          type="text"
+          placeholder="user id"
+          value={userId}
+          onChange={(e)=>{setUserId(e.target.value)}}
+        />
       </form>
     </div>
   );
