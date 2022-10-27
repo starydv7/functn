@@ -36,7 +36,7 @@ const FormValidation = () => {
         <label>First Name</label>
         <br></br>
         {Object.keys(firstNameErr).map((key) => {
-          return <div style={{ color: "red" }}>{firstNameErr}[key]</div>
+          return <div style={{ color: "red" }}>{firstNameErr}[key]</div>;
         })}
         <input
           type="text"
@@ -60,6 +60,9 @@ const FormValidation = () => {
         <br></br>
         <label>Mobile Number</label>
         <br></br>
+        {Object.keys(mobileNumberErr).map((key) => {
+          return <div style={{ color: "red" }}>{mobileNumberErr}[key]</div>;
+        })}
         <input
           type="number"
           placeholder="Mobile Number"
@@ -78,7 +81,7 @@ const FormValidation = () => {
           }}
         />
         <br></br>
-        <button className='btn'>Submit</button>
+        <button className="btn">Submit</button>
       </form>
     </div>
   );
