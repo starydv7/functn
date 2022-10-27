@@ -9,6 +9,7 @@ const FormValidation = () => {
   const [userId, setUserId] = useState("");
   const [firstNameErr, setFirstNameErr] = useState({});
   const [lastNameErr, setLastNameErr] = useState({});
+  const [mobileNumberErr, setMobileNumberErr] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
   }
@@ -24,7 +25,10 @@ const FormValidation = () => {
     }
     if (mobileNumber.trim().length < 10 && mobileNumber.trim().length>10) {
       mobileNumberErr.mobileNumberShort="Mobile number should be of 10 digit only"
+      isValid = false;
     }
+    setFirstNameErr(firstNameErr);
+    setMobileNumberErr(mobileNumberErr);
   }
   return (
     <div>
