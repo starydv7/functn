@@ -9,7 +9,7 @@ const Cart = () => {
     });
     function createOrder(cart) {
         const pr = new Promise(function (resolve, reject) {
-            if (!validCart((car)){
+            if (!validCart((cart)){
                 const err = new Error("cart is not valid");
                 reject(err);
             }
