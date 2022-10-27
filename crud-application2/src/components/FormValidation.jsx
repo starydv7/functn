@@ -15,7 +15,16 @@ const FormValidation = () => {
   const formValidation = () => {
     const firstNameErr = {};
     const lastNameErr = {};
+    const mobileNumberErr = {};
     let isValid = true;
+    if (firstName.trim().length < 5)
+    {
+      firstNameErr.firstNameShort = "first name is too short";
+      isValid = false;
+    }
+    if (mobileNumber.trim().length < 10 && mobileNumber.trim().length>10) {
+      mobileNumberErr.mobileNumberShort="Mobile number should be of 10 digit only"
+    }
   }
   return (
     <div>
