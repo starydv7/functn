@@ -10,13 +10,19 @@ const FormValidation = () => {
   return (
     <div>
       <form>
+        <label>First Name</label>
         <input
           type="text"
           placeholder="First Name"
           value={firstName}
           onChange={(e)=>{setFirstName(e.target.value)}}
         />
-        <input type="text" placeholder="Last Name" />
+        <label>Last Name</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+
+        />
         <input type="number" placeholder="Mobile Number" />
         <input type="text" placeholder="user id" />
       </form>
