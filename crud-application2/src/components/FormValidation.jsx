@@ -4,6 +4,7 @@ import { useState } from 'react';
 const FormValidation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
   }
@@ -21,9 +22,16 @@ const FormValidation = () => {
         <input
           type="text"
           placeholder="Last Name"
+          value={lastName}
+          onChange={(e)=>{setLastName(e.target.value)}}
 
         />
-        <input type="number" placeholder="Mobile Number" />
+        <input
+          type="number"
+          placeholder="Mobile Number"
+          value={mobileNumber}
+          onChange={(e)=>setMobileNumber(e.target.value)}
+        />
         <input type="text" placeholder="user id" />
       </form>
     </div>
