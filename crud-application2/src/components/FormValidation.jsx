@@ -12,6 +12,7 @@ const FormValidation = () => {
   const [mobileNumberErr, setMobileNumberErr] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
+    const isValid = formValidation();
   }
   const formValidation = () => {
     const firstNameErr = {};
