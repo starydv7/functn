@@ -28,8 +28,10 @@ const FetchGet = () => {
             },
             body: JSON.stringify(dataPost)    
         }).then((result) => {
-          console.log("result", result);
-          setData(result)
+          result.json().then((resp) => {
+            console.log("resp", resp);
+            setData(resp);
+         })
         })
     }
   return (
