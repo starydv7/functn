@@ -24,6 +24,7 @@ const FetchGet = () => {
                      <span>ID:-</span> {item.id}:-
                           
                           <span>Title:{item.title}</span>
+                          <span></span>
                     </div>
                   );
               })
