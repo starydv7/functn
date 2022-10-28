@@ -86,5 +86,4 @@ const FetchGet = () => {
     </div>
   );
 }
-
-export default FetchGet
+export default FetchGet;
