@@ -11,44 +11,40 @@ const FetchGet = () => {
       getData();
     }, [])
   function getData() {
-     fetch("https://jsonplaceholder.typicode.com/posts")
-            .then((result) => {
-                result.json()
-                    .then((resp) => {
-                        console.log("result", resp)
-                        setData(resp);
-                })
-        })
+     fetch("https://apipawan3.herokuapp.com/users").then((result) => {
+       result.json().then((resp) => {
+         console.log("result", resp);
+         setData(resp);
+       });
+     });
   }
   const handleDelete = (id) => {
 
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-      method: "DELETE"
-      
+    fetch(`https://apipawan3.herokuapp.com/users/${id}`, {
+      method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {
         console.log(resp);
         getData();
-        
-      })
-    })
+      });
+    });
   }
     const saveUser = () => {
         let dataPost={name,title,mobilenumber}
         console.log(name, title, mobilenumber);
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: "POST",
-            headers: {
-                "Accept": "application/json",
-                "content-type":"aplication/json"
-            },
-            body: JSON.stringify(dataPost)    
+        fetch("https://apipawan3.herokuapp.com/users", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "content-type": "aplication/json",
+          },
+          body: JSON.stringify(dataPost),
         }).then((result) => {
           result.json().then((resp) => {
             console.log("resp", resp);
             setData(resp);
-         })
-        })
+          });
+        });
     }
   return (
     <div>
@@ -97,6 +93,7 @@ const FetchGet = () => {
             <div key={item.id}>
               <span>ID:-</span> {item.id}:-
               <span>Title:{item.title}</span>
+              <span>EMail:{item.email}</span>
               <span>Mobile Number{item.mobilenumber}</span>
               <span><button onClick={()=>handleDelete(item.id)}>Delete</button></span>
             </div>
