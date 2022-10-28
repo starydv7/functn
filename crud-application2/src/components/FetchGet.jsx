@@ -18,7 +18,7 @@ const FetchGet = () => {
         })
     }, [])
     const saveUser = () => {
-        let data={name,title,mobilenumber}
+        let dataPost={name,title,mobilenumber}
         console.log(name, title, mobilenumber);
         fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
@@ -26,9 +26,7 @@ const FetchGet = () => {
                 "Accept": "application/json",
                 "content-type":"aplication/json"
             },
-            body: JSON.stringify(data)
-                
-            
+            body: JSON.stringify(dataPost)    
         }).then((result) => {
           console.log("result", result);
           setData(result)
