@@ -30,7 +30,8 @@ const FetchGet = () => {
                 
             
         }).then((result) => {
-            console.log("result", result);
+          console.log("result", result);
+          setData(result)
         })
     }
   return (
@@ -80,7 +81,7 @@ const FetchGet = () => {
             <div key={item.id}>
               <span>ID:-</span> {item.id}:-
               <span>Title:{item.title}</span>
-              <span></span>
+              <span>Mobile Number{item.mobilenumber}</span>
             </div>
           );
         })}
