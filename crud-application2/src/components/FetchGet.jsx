@@ -46,7 +46,7 @@ const FetchGet = () => {
         }).then((result) => {
           result.json().then((resp) => {
             console.log("resp", resp);
-            setData(resp);
+            //setData(resp);
           });
         });
     }
@@ -105,7 +105,7 @@ const FetchGet = () => {
           return (
             <div key={item.id}>
               <span>ID:-</span> {item.id}:-
-              <span>Title:{item.title}</span>
+              <span>Title:{item.name}</span>
               <span>EMail:{item.email}</span>
               <span>Mobile Number{item.mobileNumber}</span>
               <span>
