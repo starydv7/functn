@@ -4,6 +4,9 @@ import { useState } from 'react'
 
 const FetchGet = () => {
     const [data, setData] = useState([]);
+    const [name, setName] = useState("");
+    const [title, setTitle] = useState("");
+    const [mobilenumber, setMobileNumber] = useState("");
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/posts")
             .then((result) => {
@@ -13,24 +16,40 @@ const FetchGet = () => {
                         setData(resp);
                 })
         })
-    },[])
+    }, [])
+    
   return (
-      <div>
-          {
-              data.length>0 &&
-              data.map((item) => {
-                  return (
-                    <div key={item.id}>
-                     <span>ID:-</span> {item.id}:-
-                          
-                          <span>Title:{item.title}</span>
-                          <span></span>
-                    </div>
-                  );
-              })
-          }
+    <div>
+      <form>
+              <input
+                  type="text"
+                  value={name}
+                  placeholder="name"
+                  name="name" />
+        <br />
+              <input
+                  type="text"
+                  placeholder="title"
+                  name="title" />
+              <input
+                  type="text"
+                  placeholder="mobilenumber"
+                  name="mobilenumber" />
+        <br />
+        <br />
+      </form>
+      {data.length > 0 &&
+        data.map((item) => {
+          return (
+            <div key={item.id}>
+              <span>ID:-</span> {item.id}:-
+              <span>Title:{item.title}</span>
+              <span></span>
+            </div>
+          );
+        })}
     </div>
-  )
+  );
 }
 
 export default FetchGet
