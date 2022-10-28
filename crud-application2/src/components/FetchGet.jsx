@@ -17,6 +17,9 @@ const FetchGet = () => {
                 })
         })
     }, [])
+  const handleDelete = () => {
+    
+  }
     const saveUser = () => {
         let dataPost={name,title,mobilenumber}
         console.log(name, title, mobilenumber);
