@@ -6,7 +6,7 @@ const FetchGet = () => {
     const [data, setData] = useState([]);
     const [name, setName] = useState("");
     const [title, setTitle] = useState("");
-  const [mobilenumber, setMobileNumber] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
   const [email, setEmail] = useState("");
     useEffect(() => {
       getData();
@@ -30,9 +30,12 @@ const FetchGet = () => {
       });
     });
   }
+  useEffect(() => {
+    saveUser();
+  }, []);
     const saveUser = () => {
-        let dataPost={name,title,mobilenumber,email}
-        console.log(name, title, mobilenumber,email);
+        let dataPost={name,title,mobileNumber,email}
+        console.log(name, title, mobileNumber,email);
         fetch("https://apipawan3.herokuapp.com/users", {
           method: "POST",
           headers: {
@@ -80,9 +83,9 @@ const FetchGet = () => {
         />
         <input
           type="text"
-          value={mobilenumber}
-          placeholder="mobilenumber"
-          name="mobilenumber"
+          value={mobileNumber}
+          placeholder="mobileNumber"
+          name="mobileNumber"
           onChange={(e) => {
             setMobileNumber(e.target.value);
           }}
@@ -104,7 +107,7 @@ const FetchGet = () => {
               <span>ID:-</span> {item.id}:-
               <span>Title:{item.title}</span>
               <span>EMail:{item.email}</span>
-              <span>Mobile Number{item.mobilenumber}</span>
+              <span>Mobile Number{item.mobileNumber}</span>
               <span>
                 <button onClick={() => handleDelete(item.id)}>Delete</button>
               </span>
