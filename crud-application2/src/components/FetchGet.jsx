@@ -8,7 +8,10 @@ const FetchGet = () => {
     const [title, setTitle] = useState("");
     const [mobilenumber, setMobileNumber] = useState("");
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/posts")
+      getData();
+    }, [])
+  function getData() {
+     fetch("https://jsonplaceholder.typicode.com/posts")
             .then((result) => {
                 result.json()
                     .then((resp) => {
@@ -16,9 +19,19 @@ const FetchGet = () => {
                         setData(resp);
                 })
         })
-    }, [])
-  const handleDelete = () => {
-    
+  }
+  const handleDelete = (id) => {
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      method: "DELETE"
+      
+    }).then((result) => {
+      result.json().then((resp) => {
+        console.log(resp);
+        getData();
+        
+      })
+    })
   }
     const saveUser = () => {
         let dataPost={name,title,mobilenumber}
@@ -85,6 +98,7 @@ const FetchGet = () => {
               <span>ID:-</span> {item.id}:-
               <span>Title:{item.title}</span>
               <span>Mobile Number{item.mobilenumber}</span>
+              <span><button onClick={()=>handleDelete(item.id)}>Delete</button></span>
             </div>
           );
         })}
