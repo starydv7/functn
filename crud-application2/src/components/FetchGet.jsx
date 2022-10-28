@@ -74,7 +74,7 @@ const FetchGet = () => {
         <br />
         <br />
       </form>
-      {/* {data.length > 0 &&
+      {data.length > 0 &&
         data.map((item) => {
           return (
             <div key={item.id}>
@@ -83,7 +83,7 @@ const FetchGet = () => {
               <span></span>
             </div>
           );
-        })} */}
+        })}
     </div>
   );
 }
