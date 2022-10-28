@@ -34,7 +34,11 @@ const FetchGet = () => {
     saveUser();
   }, []);
     const saveUser = () => {
-        let dataPost={name,title,mobileNumber,email}
+      let dataPost = {
+        name: name,
+        title: title,
+        mobileNumber:mobileNumber, email:email,
+      }
         console.log(name, title, mobileNumber,email);
         fetch("https://apipawan3.herokuapp.com/users", {
           method: "POST",
