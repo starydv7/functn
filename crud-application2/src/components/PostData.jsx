@@ -5,7 +5,8 @@ const PostData = () => {
         name: "",
         date: "",
         title: "",
-        mobile:"",
+        mobile: "",
+        email:'',
     })
     function submit(e) {
         e.preventDefault();
@@ -13,7 +14,8 @@ const PostData = () => {
             name: data.name,
             date: data.date,
             title: data.title,
-            mobile:data.mobile,
+            mobile: data.mobile,
+            email:data.email,
         })
             .then((res) => {
                 console.log(res.data);
@@ -62,6 +64,14 @@ const PostData = () => {
           onChange={(e) => handle(e)}
           id="mobile"
           value={data.mobile}
+        />
+        <label>Mobile</label>
+        <input
+          type="text"
+          placeholder="Email"
+          onChange={(e) => handle(e)}
+          id="email"
+          value={data.email}
         />
         <button style={{}}>Save Data</button>
       </form>
