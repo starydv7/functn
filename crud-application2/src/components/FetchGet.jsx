@@ -37,7 +37,8 @@ const FetchGet = () => {
       let dataPost = {
         name: name,
         title: title,
-        mobileNumber:mobileNumber, email:email,
+        mobileNumber: mobileNumber,
+        email: email,
       }
         console.log(name, title, mobileNumber,email);
         fetch("https://apipawan3.herokuapp.com/users", {
