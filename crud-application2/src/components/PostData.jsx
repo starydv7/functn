@@ -75,8 +75,9 @@ const PostData = () => {
           onChange={(e) => handle(e)}
           id="mobile"
           value={data.mobile}
-        />
-        <label>Mobile</label>
+              />
+              <br/>
+        <label>Email</label>
         <input
           type="text"
           placeholder="Email"
