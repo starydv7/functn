@@ -4,10 +4,6 @@ import { useState } from 'react'
 
 const FetchGet = () => {
     const [data, setData] = useState([]);
-  //   const [name, setName] = useState("");
-  //   const [title, setTitle] = useState("");
-  // const [mobileNumber, setMobileNumber] = useState("");
-  // const [email, setEmail] = useState("");
     useEffect(() => {
       getData();
     }, [])
@@ -41,6 +37,10 @@ const FetchGet = () => {
               <span>Title:-{item.title},</span>
               <span>Email:-{item.email},</span>
               <span>Mobile Number:-{item.mobile},</span>
+              <span>Avatar:-<img src={item.image}
+                alt="photo"
+                style={{ borderRadius: "1000px",width:"50px",height:"50px" }}
+              /></span>
               <span>
                 <button onClick={() => handleDelete(item.id)}>Delete</button>
               </span>
