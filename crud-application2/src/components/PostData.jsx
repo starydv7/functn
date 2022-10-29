@@ -19,20 +19,51 @@ const PostData = () => {
                 console.log(res.data);
         })
     }
+    function handle(e) {
+        const newdata = { ...data }
+        newdata[e.target.id] = e.target.value;
+        setData(newdata)
+        console.log("PostData",newdata);
+    }
   return (
     <div>
-      <form>
+      <form onSubmit={(e) => submit(e)}>
         <label>Name</label>
-        <input type="text" placeholder="name" />
+        <input
+          type="text"
+          placeholder="name"
+          onChange={(e) => handle(e)}
+          id="name"
+          value={data.name}
+        />
         <br />
         <label>Data</label>
-              <input type="text" placeholder="Date" />
-              <br />
-              <label>Title</label>
-              <input type="text" placeholder="Title" />
-              <br/>
-              <label>Mobile</label>
-              <input type="text" placeholder="Mobile"/>
+        <input
+          type="date"
+          placeholder="Date"
+          onChange={(e) => handle(e)}
+          id="date"
+          value={data.date}
+        />
+        <br />
+        <label>Title</label>
+        <input
+          type="text"
+          placeholder="Title"
+          onChange={(e) => handle(e)}
+          id="title"
+          value={data.title}
+        />
+        <br />
+        <label>Mobile</label>
+        <input
+          type="text"
+          placeholder="Mobile"
+          onChange={(e) => handle(e)}
+          id="mobile"
+          value={data.mobile}
+        />
+        <button style={{}}>Save Data</button>
       </form>
     </div>
   );
