@@ -35,7 +35,7 @@ const PostData = () => {
         <label>Name</label>
         <input
           type="text"
-          placeholder="name"
+          placeholder="Name"
           onChange={(e) => handle(e)}
           id="name"
           value={data.name}
