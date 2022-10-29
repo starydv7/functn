@@ -6,7 +6,8 @@ const PostData = () => {
         date: "",
         title: "",
         mobile: "",
-        email:'',
+        email: '',
+        image:"",
     })
     function submit(e) {
         e.preventDefault();
@@ -15,7 +16,8 @@ const PostData = () => {
             date: data.date,
             title: data.title,
             mobile: data.mobile,
-            email:data.email,
+            email: data.email,
+            image:data.image,
         })
             .then((res) => {
                 console.log(res.data);
@@ -37,6 +39,15 @@ const PostData = () => {
           onChange={(e) => handle(e)}
           id="name"
           value={data.name}
+              />
+              <br/>
+        <label>Avatar</label>
+        <input
+          type="url"
+          placeholder="Image Url"
+          onChange={(e) => handle(e)}
+          id="image"
+          value={data.image}
         />
         <br />
         <label>Data</label>
@@ -72,17 +83,19 @@ const PostData = () => {
           onChange={(e) => handle(e)}
           id="email"
           value={data.email}
-              />
-              <br/>
-              <button
-                  style={{
-                      backgroundColor: "red",
-                      color: "white",
-                      fontSize: "20px",
-                      borderRadius: "15px",
-                      marginTop: "10px"
-                      
-                  }}>Save Data</button>
+        />
+        <br />
+        <button
+          style={{
+            backgroundColor: "red",
+            color: "white",
+            fontSize: "20px",
+            borderRadius: "15px",
+            marginTop: "10px",
+          }}
+        >
+          Save Data
+        </button>
       </form>
     </div>
   );
