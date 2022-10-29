@@ -20,8 +20,22 @@ const PostData = () => {
         })
     }
   return (
-    <div>PostData</div>
-  )
+    <div>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="name" />
+        <br />
+        <label>Data</label>
+              <input type="text" placeholder="Date" />
+              <br />
+              <label>Title</label>
+              <input type="text" placeholder="Title" />
+              <br/>
+              <label>Mobile</label>
+              <input type="text" placeholder="Mobile"/>
+      </form>
+    </div>
+  );
 }
 
 export default PostData
