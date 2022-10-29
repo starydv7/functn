@@ -36,11 +36,11 @@ const FetchGet = () => {
           return (
             <div key={item.id}>
               <span>ID:-</span> {item.id}:-
-              <span>Name:-{item.name}</span>
-              <span>Date:-{item.date}</span>
-              <span>Title:-{item.title}</span>
-              <span>EMail:-{item.email}</span>
-              <span>Mobile Number:-{item.mobile}</span>
+              <span>Name:-{item.name},</span>
+              <span>Date:-{item.date},</span>
+              <span>Title:-{item.title},</span>
+              <span>Email:-{item.email},</span>
+              <span>Mobile Number:-{item.mobile},</span>
               <span>
                 <button onClick={() => handleDelete(item.id)}>Delete</button>
               </span>
