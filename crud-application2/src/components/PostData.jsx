@@ -72,8 +72,17 @@ const PostData = () => {
           onChange={(e) => handle(e)}
           id="email"
           value={data.email}
-        />
-        <button style={{handle}}>Save Data</button>
+              />
+              <br/>
+              <button
+                  style={{
+                      backgroundColor: "red",
+                      color: "white",
+                      fontSize: "20px",
+                      borderRadius: "15px",
+                      marginTop: "10px"
+                      
+                  }}>Save Data</button>
       </form>
     </div>
   );
