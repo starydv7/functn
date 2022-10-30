@@ -28,4 +28,4 @@ function currying(a) {
       return a;
    }
 }
-console.log(add(4)(3)(6)(8)());
+console.log(currying(4)(3)(6)(8)());
