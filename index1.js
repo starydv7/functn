@@ -14,7 +14,6 @@ function equilibrium(arr, n)
                  return i;
          }
           
-        
             return -1;
 }
  var arr = new Array(-7,1,5,2,-4,3,0);
