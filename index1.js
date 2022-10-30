@@ -24,7 +24,7 @@ console.log(equilibrium(arr, n));
 //infinite currying
 function currying(a) {
    return function (b) {
-      if (b) return add(a + b);
+      if (b) return currying(a + b);
       return a;
    }
 }
