@@ -20,3 +20,13 @@ function equilibrium(arr, n)
  var arr = new Array(-7,1,5,2,-4,3,0);
 n = arr.length;
 console.log(equilibrium(arr, n));
+
+//infinite currying
+
+function currying(a) {
+   return function (b) {
+      if (b) return add(a + b);
+      return a;
+   }
+}
+console.log(add(4)(3)(6)(8)());
