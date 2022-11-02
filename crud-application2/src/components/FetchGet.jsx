@@ -1,9 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react';
-import { useState } from 'react'
+import { useState } from 'react';
 
 const FetchGet = () => {
     const [data, setData] = useState([]);
+  const [api, setApi] = useState("");
     useEffect(() => {
       getData();
     }, [])
@@ -24,6 +25,7 @@ const FetchGet = () => {
         getData();
       });
     });
+
   }
   return (
     <div>
