@@ -1,13 +1,14 @@
 import React,{useState} from 'react'
 import axios from "axios";
 const PostData = () => {
-    const [data, setData] = useState({
-        name: "",
-        date: "",
-        title: "",
-        mobile: "",
-        email: '',
-        image:"",
+  let arr1={name:"",date:"",title:"",mobile:"",email:"",image:""}
+    const [data, setData] = useState({arr1
+        // name: "",
+        // date: "",
+        // title: "",
+        // mobile: "",
+        // email: '',
+        // image:"",
     })
     function submit(e) {
         e.preventDefault();

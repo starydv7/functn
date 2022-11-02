@@ -26,6 +26,16 @@ const FetchGet = () => {
       });
     });
   }
+  //  const handleEdit = (id) => {
+  //    fetch(`https://apipawan3.herokuapp.com/users/${id}`, {
+  //      method: "PUT",
+  //    }).then((result) => {
+  //      result.json().then((resp) => {
+  //        console.log(resp);
+  //        getData();
+  //      });
+  //    });
+  //  };
   return (
     <div>
       {data.length > 0 &&
@@ -38,11 +48,11 @@ const FetchGet = () => {
               <span>Title:-{item.title},</span>
               <span>Email:-{item.email},</span>
               <span>Mobile Number:-{item.mobile},</span>
-              <span>Avatar:-<img src={item.image}
-                alt="photo"
-                style={{ borderRadius: "1000px",width:"50px",height:"50px" }}
-              /></span>
               <span>
+                <img src={item.image} alt="photo" />
+              </span>
+              <span>
+                {/* <button onClick={() => handleEdit(item.id)}>Edit</button> */}
                 <button onClick={() => handleDelete(item.id)}>Delete</button>
               </span>
             </div>
