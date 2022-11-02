@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const FetchGet = () => {
     const [data, setData] = useState([]);
-  const [api, setApi] = useState("");
+  
     useEffect(() => {
       getData();
     }, [])
