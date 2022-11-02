@@ -25,7 +25,6 @@ const FetchGet = () => {
         getData();
       });
     });
-
   }
   return (
     <div>
