@@ -16,28 +16,61 @@ console.log(uniqueChar);
 //     }
 //     console.log(arr[obj]);
 // }
-var array = [1, 2, 3, 4, 5, 1, 3, 4, 1];
-function mode(array)
-{
-    if(array.length == 0)
-        return null;
-    var modeMap = {};
-    var maxEl = array[0], maxCount = 1;
-    for(var i = 0; i < array.length; i++)
-    {
-        var el = array[i];
-        if(modeMap[el] == null)
-            modeMap[el] = 1;
-        else
-            modeMap[el]++;  
-        if(modeMap[el] > maxCount)
-        {
-            maxEl = el;
-            maxCount = modeMap[el];
-        }
-    }
-    return maxEl;
-    return el;
+// var array = [1, 2, 3, 4, 5, 1, 3, 4, 1];
+// function mode(array)
+// {
+//     if(array.length == 0)
+//         return null;
+//     var modeMap = {};
+//     var maxEl = array[0], maxCount = 1;
+//     for(var i = 0; i < array.length; i++)
+//     {
+//         var el = array[i];
+//         if(modeMap[el] == null)
+//             modeMap[el] = 1;
+//         else
+//             modeMap[el]++;  
+//         if(modeMap[el] > maxCount)
+//         {
+//             maxEl = el;
+//             maxCount = modeMap[el];
+//         }
+//     }
+//     return maxEl;
+//     return el;
+// }
+// var res = mode(array);
+// console.log(res);
+ const givenArray = [1, 2, 3, 4, 1, 1, 2, 3, 4,4,4,4,4,4,11,1,1,1,1,1,1,1,1,,11,1,1,1,1,1,1,1,];
+
+// const maxValue = givenArray
+//   .sort(
+//     (previous, current) =>
+//       givenArray.filter(item => item === previous).length -
+//       givenArray.filter(item => item === current).length
+//   )
+//   .pop();
+
+// console.log(`Maximum occurrence value : ${maxValue}`);
+let itemsMap = {};
+let maxValue = 0;
+let maxCount = 0;
+
+// 3
+for (let item of givenArray) {
+  // 4  
+  if (itemsMap[item] == null) {
+    itemsMap[item] = 1;
+  } else {
+    itemsMap[item]++;
+  }
+
+  //5
+  if (itemsMap[item] > maxCount) {
+    maxValue = item;
+    maxCount = itemsMap[item];
+  }
 }
-var res = mode(array);
-console.log(res);
+
+// 6
+console.log(`Value : ${maxValue}, Count : ${maxCount}`);
