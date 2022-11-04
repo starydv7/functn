@@ -154,3 +154,4 @@ function Food(name, price) {
         this.category = "food";
     }
 console.log(new Food("cheese", 5));
+
