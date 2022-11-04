@@ -82,8 +82,6 @@ function calculate(a, b) {
 const [add, multiply] = calculate(3, 4);
 console.log("sum", add);
 console.log("multiply", multiply);
-
-
 const vechiles = ["mutang", "f-15", "masai"];
 const brand = ["ferrari", "Tata", "mahindra"];
 const [car, batch, school] = vechiles;
