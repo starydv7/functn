@@ -75,3 +75,13 @@ for (let item of givenArray) {
 // 6
 console.log(`Value : ${maxValue}, Count : ${maxCount}`);
 console.log("value",maxValue ,"and max count is" ,maxCount);
+
+
+function calculate(a, b) {
+    const add = a + b;
+    const multiply = a * b;
+    return [add, multiply];
+}
+const [add, multiply] = calculate(3, 4);
+console.log("sum", add);
+console.log("multiply", multiply);
