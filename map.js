@@ -93,16 +93,48 @@ const combined = [...vechiles, ...brand];
 console.log(combined);
 
 //Bind()
+// var pokemon = {
+//     firstName: "pika",
+//     lastName: "Chu",
+//     getPokeName: function () {
+//         var fullName = this.firstname + " " + this.lastName;
+//         return fullName;
+//     }
+// }
+// var pokemonName = function () {
+//     console.log(this.getPokeName() + "I chosse You!");
+// };
+// var logPokemon = pokemonName.bind(pokemon);
+// logPokemon();
+// var pokemon = {
+//     firstname: 'Pika',
+//     lastname: 'Chu ',
+//     getPokeName: function() {
+//         var fullname = this.firstname + ' ' + this.lastname;
+//         return fullname;
+//     }
+// };
+
+// var pokemonName = function() {
+//     console.log(this.getPokeName() + 'I choose you!');
+// };
+
+// var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
+
+// logPokemon();
 var pokemon = {
-    firstName: "pika",
-    lastName: "Chu",
-    getPokeName: function () {
-        var fullName = this.firstname + " " + this.lastName;
-        return fullName;
+    firstname: 'Pika',
+    lastname: 'Chu ',
+    getPokeName: function() {
+        var fullname = this.firstname + ' ' + this.lastname;
+        return fullname;
     }
-}
-var pokemonName = function () {
-    console.log(this.getPokeName() + "I chosse You!");
 };
-var logPokemon = pokemonName.bind(pokemon);
-logPokemon();
+
+var pokemonName = function() {
+    console.log(this.getPokeName() + 'I choose you!');
+};
+
+var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
+
+logPokemon(); // 'Pika Chu I choose you!'
