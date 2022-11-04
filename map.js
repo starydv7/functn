@@ -71,7 +71,6 @@ for (let item of givenArray) {
     maxCount = itemsMap[item];
   }
 }
-
 // 6
 console.log(`Value : ${maxValue}, Count : ${maxCount}`);
 console.log("value",maxValue ,"and max count is" ,maxCount);
