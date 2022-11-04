@@ -85,3 +85,19 @@ function calculate(a, b) {
 const [add, multiply] = calculate(3, 4);
 console.log("sum", add);
 console.log("multiply", multiply);
+
+
+const vechiles = ["mutang", "f-15", "masai"];
+const brand = ["ferrari", "Tata", "mahindra"];
+const [car, batch, school] = vechiles;
+
+console.log(vechiles);
+
+const numberOne = [1, 2, 3];
+const numberTwo = [4, 5, 6];
+
+const numberCombined = [...numberOne, ...numberTwo];
+
+console.log(numberCombined);
+const combined = [...vechiles, ...brand];
+console.log(combined);
