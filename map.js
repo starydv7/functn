@@ -93,7 +93,6 @@ const combined = [...vechiles, ...brand];
 console.log(combined);
 
 //Bind()
-
 var pokemon = {
     firstName: "pika",
     lastName: "Chu",
