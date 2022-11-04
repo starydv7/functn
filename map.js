@@ -138,7 +138,7 @@ logPokemon(); // 'Pika Chu I choose you!';
 
 //Apply()
 const number = [5, 6, 2, 3, 7];
-const max = Math.max.apply(null, numbers);
+const max = Math.max.apply(null, number);
 console.log("max",max);
-const min = Math.min.apply(null, numbers);
+const min = Math.min.apply(null, number);
 console.log("min", min);
