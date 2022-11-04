@@ -91,3 +91,19 @@ const numberCombined = [...numberOne, ...numberTwo];
 console.log(numberCombined);
 const combined = [...vechiles, ...brand];
 console.log(combined);
+
+//Bind()
+
+var pokemon = {
+    firstName: "pika",
+    lastName: "Chu",
+    getPokeName: function () {
+        var fullName = this.firstname + " " + this.lastName;
+        return fullName;
+    }
+}
+var pokemonName = function () {
+    console.log(this.getPokeName() + "I chosse You!");
+};
+var logPokemon = pokemonName.bind(pokemon);
+logPokemon();
