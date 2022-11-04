@@ -55,7 +55,6 @@ console.log(uniqueChar);
 let itemsMap = {};
 let maxValue = 0;
 let maxCount = 0;
-
 // 3
 for (let item of givenArray) {
   // 4  
