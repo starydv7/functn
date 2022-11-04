@@ -135,7 +135,6 @@ var pokemonName = function() {
 };
 var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
 logPokemon(); // 'Pika Chu I choose you!';
-
 //Apply()
 const number = [5, 6, 2, 3, 7,11];
 const max = Math.max.apply(null, number);
