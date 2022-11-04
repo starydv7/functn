@@ -141,3 +141,5 @@ const max = Math.max.apply(null, number);
 console.log("max",max);
 const min = Math.min.apply(null, number);
 console.log("min", min);
+const min1 = Math.min(number);
+console.log(min1);
