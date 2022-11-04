@@ -74,3 +74,4 @@ for (let item of givenArray) {
 
 // 6
 console.log(`Value : ${maxValue}, Count : ${maxCount}`);
+console.log("value": maxValue "and" maxCount);
