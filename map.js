@@ -143,3 +143,14 @@ const min = Math.min.apply(null, number);
 console.log("min", min);
 const min1 = Math.min.apply(null,number);
 console.log(min1);
+//call
+
+function Products(name, price) {
+    this.name = name;
+    this.price = price;
+}
+function Food(name, price) {
+    Products.call(this, name, price)
+        this.category = "food";
+    }
+console.log(new Food("cheese", 5));
