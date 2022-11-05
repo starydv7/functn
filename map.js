@@ -122,36 +122,46 @@ console.log(combined);
 // var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
 
 // logPokemon();
-var pokemon = {
-    firstname: 'Pika',
-    lastname: 'Chu ',
-    getPokeName: function() {
-        var fullname = this.firstname + ' ' + this.lastname;
-        return fullname;
-    }
-};
-var pokemonName = function() {
-    console.log(this.getPokeName() + 'I choose you!');
-};
-var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
-logPokemon(); // 'Pika Chu I choose you!';
-//Apply()
-const number = [5, 6, 2, 3, 7,11];
-const max = Math.max.apply(null, number);
-console.log("max",max);
-const min = Math.min.apply(null, number);
-console.log("min", min);
-const min1 = Math.min.apply(null,number);
-console.log(min1);
-//call
+// var pokemon = {
+//     firstname: 'Pika',
+//     lastname: 'Chu ',
+//     getPokeName: function() {
+//         var fullname = this.firstname + ' ' + this.lastname;
+//         return fullname;
+//     }
+// };
+// var pokemonName = function() {
+//     console.log(this.getPokeName() + 'I choose you!');
+// };
+// var logPokemon = pokemonName.bind(pokemon); // creates new object and binds pokemon. 'this' of pokemon === pokemon now
+// logPokemon(); // 'Pika Chu I choose you!';
+// //Apply()
+// const number = [5, 6, 2, 3, 7,11];
+// const max = Math.max.apply(null, number);
+// console.log("max",max);
+// const min = Math.min.apply(null, number);
+// console.log("min", min);
+// const min1 = Math.min.apply(null,number);
+// console.log(min1);
+// //call
 
-function Products(name, price) {
-    this.name = name;
-    this.price = price;
+// function Products(name, price) {
+//     this.name = name;
+//     this.price = price;
+// }
+// function Food(name, price) {
+//     Products.call(this, name, price)
+//         this.category = "food";
+//     }
+// console.log(new Food("cheese", 5));
+function App() {
+  let text = "pawan";
+  return (
+    <div>
+      <p>{text}</p>
+    </div>
+    
+  )
 }
-function Food(name, price) {
-    Products.call(this, name, price)
-        this.category = "food";
-    }
-console.log(new Food("cheese", 5));
+
 
