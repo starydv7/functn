@@ -184,3 +184,5 @@ const { name } = datadot;
 const { age } = datadot;
 console.log(name);
 console.log(age);
+
+//combine two array or merge two array
