@@ -154,14 +154,19 @@ console.log(combined);
 //         this.category = "food";
 //     }
 // console.log(new Food("cheese", 5));
-function App() {
-  let text = "pawan";
-  return (
-    <div>
-      <p>{text}</p>
-    </div>
+// function App() {
+//   let text = "pawan";
+//   return (
+//     <div>
+//       <p>{text}</p>
+//     </div>
     
-  )
-}
+//   )
+// }
 
 
+//how to take out 2nd element of array
+
+const data = ["Pawan", "Yadav", "Full Stack Developer"];
+const [y] = data;
+console.log(y);
