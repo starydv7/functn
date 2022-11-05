@@ -168,5 +168,5 @@ console.log(combined);
 //how to take out 2nd element of array
 
 const data = ["Pawan", "Yadav", "Full Stack Developer"];
-const [y] = data;
-console.log(y);
+const [y,z,a] = data;
+console.log(y,z,a);
