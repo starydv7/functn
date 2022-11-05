@@ -169,4 +169,9 @@ console.log(combined);
 
 const data = ["Pawan", "Yadav", "Full Stack Developer"];
 const [y,z,a] = data;
-console.log(y,z,a);
+console.log(y, z, a);
+
+
+const dataName = { name: "Pawan" };
+console.log(delete data);// we cant delete data directly
+console.log(delete data.name)// it gives true it delete the object name
