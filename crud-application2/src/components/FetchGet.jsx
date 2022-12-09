@@ -16,6 +16,7 @@ const FetchGet = () => {
        });
      });
   }
+  
   const handleDelete = (id) => {
     fetch(`https://apipawan3.herokuapp.com/users/${id}`, {
       method: "DELETE",
