@@ -9,14 +9,13 @@ const FetchGet = () => {
       getData();
     }, [])
   function getData() {
-     fetch("https://apipawan3.herokuapp.com/users").then((result) => {
-       result.json().then((resp) => {
-         console.log("result", resp);
-         setData(resp);
-       });
-     });
+    fetch("https://apipawan3.herokuapp.com/users").then((result) => {
+      result.json().then((resp) => {
+        console.log("result", resp);
+        setData(resp);
+      });
+    });
   }
-  
   const handleDelete = (id) => {
     fetch(`https://apipawan3.herokuapp.com/users/${id}`, {
       method: "DELETE",
