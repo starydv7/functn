@@ -4,14 +4,12 @@ import Request from './components/Request';
 import Validation from './components/Validation';
 import FetchGet from "./components/FetchGet";
 import PostData from './components/PostData';
+import Fetch2 from './components/Fetch2';
 
 function App() {
   return (
     <div className="App">
-      {/* <FormValidation/> */}
-      {/* <Request/> */}
-      <PostData/>
-      <FetchGet/>
+     <Fetch2/>
     </div>
   );
 }
