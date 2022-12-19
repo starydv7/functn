@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <Validation />
       <FetchGet />
-      <PostData/>
+      <PostData />
+      <Fetch2/>
       {/* <Fetch2/> */}
       <Fetch3/>
     </div>
