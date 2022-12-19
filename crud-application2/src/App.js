@@ -10,6 +10,7 @@ import Fetch3 from './components/Fetch3';
 function App() {
   return (
     <div className="App">
+      <Validation/>
       {/* <Fetch2/> */}
       <Fetch3/>
     </div>
