@@ -14,7 +14,6 @@ function App() {
       <FetchGet />
       <PostData />
       <Fetch2/>
-      {/* <Fetch2/> */}
       <Fetch3/>
     </div>
   );
