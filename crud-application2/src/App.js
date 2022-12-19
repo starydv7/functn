@@ -11,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Validation />
-      <FetchGet/>
+      <FetchGet />
+      <PostData/>
       {/* <Fetch2/> */}
       <Fetch3/>
     </div>
