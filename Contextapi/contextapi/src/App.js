@@ -1,6 +1,7 @@
 import React, {createContext, useState } from "react";
 import './App.css';
 import Child from './components/Child';
+// import SuperChild from "./components/SuperChild";
 
 export const GlobalData = createContext();
 
@@ -10,8 +11,9 @@ function App() {
     <GlobalData.Provider value={{ AppColor: color }}>
     <div className="App">
       <h1>React context Api
-        <Child />
+          <Child />
         </h1>
+       
     </div>
     </GlobalData.Provider>
   );
