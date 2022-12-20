@@ -5,8 +5,9 @@ import Child from './components/Child';
 function App() {
   return (
     <div className="App">
-      <h1>React context Api</h1>
-      <Child/>
+      <h1>React context Api
+        <Child />
+        </h1>
     </div>
   );
 }
