@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import { GlobalData } from '../App';
-const Child = () => {
+
+const SuperChild = () => {
     const { AppColor } = useContext(GlobalData);
-    console.log(AppColor);
   return (
       <div>
-          <h1 style={{color:AppColor}}>Child</h1>
-      </div>
+          <h3 styles={{color:AppColor}}>Super Child</h3>
+    </div>
   )
 }
 
-export default Child
+export default SuperChild

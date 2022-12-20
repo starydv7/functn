@@ -5,7 +5,7 @@ import Child from './components/Child';
 export const GlobalData = createContext();
 
 function App() {
-  const [color, setColor] = useState('green');
+  const [color, setColor] = useState('red');
   return (
     <GlobalData.Provider value={{ AppColor: color }}>
     <div className="App">
